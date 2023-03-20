@@ -59,8 +59,8 @@
             <div class="content">
                 The processor industry has come a long way since its inception, with the relentless pursuit of
                 innovation driving it forward. On increasing internet penetration, we need processors everywhere
-                starting from refrigerators to L.E.D bulbs with their specifications. ML and AI model builders need
-                speeds, whereas LED needs an energy-efficient processor. So, everybody needs an optimized process for
+                starting from refrigerators to L.E.D bulbs with their specifications. AI and ML model builders need
+                speeds, whereas LED needs an energy-efficient processor. So, everybody needs an optimized processor for
                 his work. Can we create some processor which can be parameterized for a different purpose?
 
                 <br>
@@ -79,13 +79,13 @@
 
             <div class="content">
 
-                One of the most costly part of making a processor is the verification of the processor. If you have no
+                One of the most costly parts of making a processor is the verification of the processor. If you have no
                 idea how
-                important this is, I suggest you read this wiki <a href="https://en.wikipedia.org/wiki/Pentium_FDIV_bug"
-                    class="linkFont">page</a>, a truly tragic story of Intel. So, it is extremely hard to verify all
-                different types of processors with limited manpower and time and sometime it may not be profitable to
-                make a specialized core if its consumer size is not large. So, we need a configurable processor. Now to
-                create a configurable core, we need Configurable ISA, Configurable micro-architecture.
+                important it is, I will suggest you read this <a href="https://en.wikipedia.org/wiki/Pentium_FDIV_bug"
+                    class="linkFont">wikilink</a>about a tragic incident of Intel. So, it is extremely hard to verify all
+                different types of processors with limited manpower and time and sometimes it may not be profitable to
+                make a specialized core if its consumer size is not that large. So, we need a configurable processor. Now to
+                create a configurable core, we need Configurable ISA and Configurable micro-architecture.
 
             </div>
             <div class="heading">
@@ -93,23 +93,30 @@
             </div>
             <div class="content">
 
-                You may think, how can we make a configurable core ? well, let me discuss an idea on this.
-                We can use RISC-V as ISA and
+                You may think, how can we make a configurable core? Well, let me discuss an idea on this.<br>
+                <br>
+                &emsp We can use <a href="https://en.wikipedia.org/wiki/RISC-V"
+                class="linkFont">RISC-V</a> as ISA and
                 we employ a RISK MITIGATION strategy by splitting the Generator development into two stages:
-                configurability and Baseline Micro-Arch Design Each stage adds its flavor of innovation based on trends
-                and learnings from the previous iterations. In configurability, the focus is on adding layers of
+                Configurability and Baseline Micro-Architecture Design. Each stage adds its flavor of innovation based on trends
+                and learnings from the previous iterations.<br>
+                <br>
+                &emsp In configurability, the focus is on adding layers of
                 configurability, design abstraction and verification automation atop a baseline architecture to build
                 powerful core IP offerings. The primary instigator here is to exploit the re-usability of features from
                 existing Generator families to reduce the time to release. The use of Open and flexible tooling like
-                Python, Perl, and Scala significantly shortens the dev-cycle. The Baseline Micro-Arch stage concentrates
+                Python, Perl, and Scala significantly shortens the dev-cycle.<br>
+                <br>
+                &emsp The Baseline Micro-Architecture stage concentrates
                 on classical micro-architectural innovation to build designs catering to specific applications and/or
                 verticals, some of which may be Safety, Security, High-performance, Embedded, Resource-Constrained, and
                 Multimedia. Guidance comes from learnings from various generator families, current
-                computing trends and customer requirements.
-                You can ask, why we are using RISC-V ? <a href="https://en.wikipedia.org/wiki/RISC-V"
-                    class="linkFont">RISC-V</a> is good choice because it is an open ISA, free, customizable and it has
-                a large developer community.
-                I understand, I have used to many technical terms but read again if you did't get it.
+                computing trends and customer requirements. We will get more into core and verification generators in the subsequent sections of the writeup.<br>
+                <br>
+                &emsp 
+                You can ask, why we are using RISC-V? RISC-V is good choice because it is an open ISA, free, customizable and it has
+                a large developer community.<br>
+                Huh! too many technical terms to smash your head into at a time. Have you refered to the links in above para?:)
             </div>
 
             <div class="heading">
@@ -143,7 +150,7 @@
             </div>
 
             <div class="curvycontent" style="font-weight: 400;">
-                In conclusion, the processor industry has evolved significantly over time, driven by the need for
+                The processor industry has evolved significantly over time, driven by the need for
                 innovation and optimized performance. With the increasing demand for processors in diverse applications,
                 configurable processors have become an essential part of modern computing. By using RISC-V as the ISA
                 and employing a risk mitigation strategy to split the generator development into two stages,
@@ -152,7 +159,9 @@
                 generators and verification generators have made the process of designing and verifying processor
                 designs more efficient and comprehensive. Overall, the pursuit of innovation and configurable processors
                 development will continue to revolutionize the processor industry, catering to diverse applications and
-                optimizing performance.
+                optimizing performance.<br>
+                <br>
+                Thanks for reading my writeup till the end! See you next time:)
             </div>
 
             <hr>
