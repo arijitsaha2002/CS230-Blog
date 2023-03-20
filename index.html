@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div style="position: sticky; top: 0; background-color: white;">
+        <div class="topbar">Machine-Learning 101 Blog</div>
+        <div class="scrollOld"></div>
+        <div id="scroll" class="scroll"></div>
+    </div>
+
+
+    <div class="Body">
+        <div class="Center">
+            Configurable Processors: The Future of Computing Power?
+        </div>
+        <div style="margin-top: 50px;margin-bottom: 50px; margin-left: auto; margin-right: auto; width: max-content;">
+            <span style="float: left; line-height: .3; margin-right: 1em; margin-bottom: .1em;"><img src="arijit.jpeg"
+                    style="width: 4rem; border-radius: 2em;"></span>
+            <div class="myself" style="display: inline-block;">
+                <span style="font-style: italic; color: blueviolet; font-size: .8em;">written by</span>
+                <br>
+                <span style="font-size: .8em; font-weight: 600;">Arijit Saha</span>
+            </div>
+            <div class="myself" style="display: inline-block; margin-left: 30px;">
+                <span style="font-style: italic; color: blueviolet; font-size: .8em;">posted on</span>
+                <br>
+                <span style="font-size: .8em; font-weight: 600;">March 16, 2023</span>
+            </div>
+        </div>
+        <br>
+        <img src="processor.jpg" class="ImgBig">
+        <div style="margin-top: 100px;">
+            <span
+                style="float: left; font-size: 6rem; line-height: .6; margin-right: .1em; font-family: 'pt-serif', Georgia, serif; font-style: italic;">P</span>
+            <div class="FirstLine">
+                rocessors are the beating heart of a computer, powering everything from the simplest task to the most complex computations.
+            </div>
+        </div>
+
+        <div class="contentBody">
+
+            <div class="curvycontent">
+
+            </div>
+
+
+            <div class="heading">
+                Revolutionizing the Processor Industry: Motivation for Innovation
+            </div>
+
+            <div class="content">
+                The processor industry has come a long way since its inception, with the relentless pursuit of
+                innovation driving it forward. On increasing internet penetration, we need processors everywhere
+                starting from refrigerators to L.E.D bulbs with their specifications. ML and AI model builders need
+                speeds, whereas LED needs an energy-efficient processor. So, everybody needs an optimized process for
+                his work. Can we create some processor which can be parameterized for a different purpose?
+
+                <br>
+                <br>
+
+                So, join us on this journey as we explore the fascinating world of configurable processors and their
+                vital role in modern computing.
+            </div>
+
+
+            <div class="heading">
+                Configurable Core
+            </div>
+
+
+
+            <div class="content">
+
+                One of the most costly part of making a processor is the verification of the processor. If you have no
+                idea how
+                important this is, I suggest you read this wiki <a href="https://en.wikipedia.org/wiki/Pentium_FDIV_bug"
+                    class="linkFont">page</a>, a truly tragic story of Intel. So, it is extremely hard to verify all
+                different types of processors with limited manpower and time and sometime it may not be profitable to
+                make a specialized core if its consumer size is not large. So, we need a configurable processor. Now to
+                create a configurable core, we need Configurable ISA, Configurable micro-architecture.
+
+            </div>
+            <div class="heading">
+                Building a Configurable Core
+            </div>
+            <div class="content">
+
+                You may think, how can we make a configurable core ? well, let me discuss an idea on this.
+                We can use RISC-V as ISA and
+                we employ a RISK MITIGATION strategy by splitting the Generator development into two stages:
+                configurability and Baseline Micro-Arch Design Each stage adds its flavor of innovation based on trends
+                and learnings from the previous iterations. In configurability, the focus is on adding layers of
+                configurability, design abstraction and verification automation atop a baseline architecture to build
+                powerful core IP offerings. The primary instigator here is to exploit the re-usability of features from
+                existing Generator families to reduce the time to release. The use of Open and flexible tooling like
+                Python, Perl, and Scala significantly shortens the dev-cycle. The Baseline Micro-Arch stage concentrates
+                on classical micro-architectural innovation to build designs catering to specific applications and/or
+                verticals, some of which may be Safety, Security, High-performance, Embedded, Resource-Constrained, and
+                Multimedia. Guidance comes from learnings from various generator families, current
+                computing trends and customer requirements.
+                You can ask, why we are using RISC-V ? <a href="https://en.wikipedia.org/wiki/RISC-V"
+                    class="linkFont">RISC-V</a> is good choice because it is an open ISA, free, customizable and it has
+                a large developer community.
+                I understand, I have used to many technical terms but read again if you did't get it.
+            </div>
+
+            <div class="heading">
+                RISC-V Core Generators
+            </div>
+            <div class="content">
+                Core generators are essentially tools that generate processor designs based on a set of parameters or
+                configuration options. In the context of RISC-V, core generators allow for the creation of custom
+                processors that are tailored to specific use cases, such as embedded systems, mobile devices, or
+                high-performance computing. One of the main advantages of using core generators in RISC-V is that they
+                enable designers to optimize the processor's microarchitecture for specific applications. Another
+                advantage of core generators is that they allow for rapid prototyping and iteration.
+            </div>
+
+            <div class="heading">
+                RISC-V Verification Generators
+            </div>
+            <div class="content">
+                A verification generator is a tool that automatically generates test cases for hardware designs based on
+                a set of specifications or constraints. In the case of RISC-V processors, verification generators can be
+                used to generate test cases that ensure the processor's compliance with the RISC-V ISA specification.
+                They can significantly reduce the time and effort required for verification, as they automate the
+                generation of test cases. Verification generators can ensure more comprehensive testing than manual
+                testing. They can generate a vast number of test cases, covering a broad range of scenarios, that would
+                be impractical to test manually.
+
+            </div>
+
+            <div class="heading">
+                Conclusion
+            </div>
+
+            <div class="curvycontent" style="font-weight: 400;">
+                In conclusion, the processor industry has evolved significantly over time, driven by the need for
+                innovation and optimized performance. With the increasing demand for processors in diverse applications,
+                configurable processors have become an essential part of modern computing. By using RISC-V as the ISA
+                and employing a risk mitigation strategy to split the generator development into two stages,
+                configurability, and baseline micro-arch design, designers can create customizable processor designs
+                that are tailored to specific use cases and optimize microarchitecture for specific applications. Core
+                generators and verification generators have made the process of designing and verifying processor
+                designs more efficient and comprehensive. Overall, the pursuit of innovation and configurable processors
+                development will continue to revolutionize the processor industry, catering to diverse applications and
+                optimizing performance.
+            </div>
+
+            <hr>
+            <div style="margin-top: 50px;margin-bottom: 50px;">
+                <span
+                    style="float: left; font-size: 6rem; line-height: .6; margin-right: .5em; margin-bottom: .1em;"><img
+                        src="arijit.jpeg" style="width: 1em; border-radius: .5em;"></span>
+                <div class="myself">
+                    <span style="font-weight: bold; font-size: 1.4em;">Arijit Saha</span>
+                    <br>
+                    <br>
+
+                    Arijit Saha is a Computer Science student pursuing his BTech degree at the Indian Institute of
+                    Technology Bombay.This Blog is inspired by a talk given by Neel Gala, CTO/Co-Founder of <a
+                        href="https://incoresemi.com/" class="linkFont">InCore Semiconductors.</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+
+        <br>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
