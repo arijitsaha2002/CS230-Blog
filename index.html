@@ -82,7 +82,7 @@
                 One of the most costly parts of making a processor is the verification of the processor. If you have no
                 idea how
                 important it is, I will suggest you read this <a href="https://en.wikipedia.org/wiki/Pentium_FDIV_bug"
-                    class="linkFont">wikilink</a>about a tragic incident of Intel. So, it is extremely hard to verify all
+                    class="linkFont">wikilink </a>about a tragic incident of Intel. So, it is extremely hard to verify all
                 different types of processors with limited manpower and time and sometimes it may not be profitable to
                 make a specialized core if its consumer size is not that large. So, we need a configurable processor. Now to
                 create a configurable core, we need Configurable ISA and Configurable micro-architecture.
@@ -95,25 +95,25 @@
 
                 You may think, how can we make a configurable core? Well, let me discuss an idea on this.<br>
                 <br>
-                &emsp We can use <a href="https://en.wikipedia.org/wiki/RISC-V"
+                &emsp; We can use <a href="https://en.wikipedia.org/wiki/RISC-V"
                 class="linkFont">RISC-V</a> as ISA and
                 we employ a RISK MITIGATION strategy by splitting the Generator development into two stages:
                 Configurability and Baseline Micro-Architecture Design. Each stage adds its flavor of innovation based on trends
                 and learnings from the previous iterations.<br>
                 <br>
-                &emsp In configurability, the focus is on adding layers of
+                &emsp; In configurability, the focus is on adding layers of
                 configurability, design abstraction and verification automation atop a baseline architecture to build
                 powerful core IP offerings. The primary instigator here is to exploit the re-usability of features from
                 existing Generator families to reduce the time to release. The use of Open and flexible tooling like
                 Python, Perl, and Scala significantly shortens the dev-cycle.<br>
                 <br>
-                &emsp The Baseline Micro-Architecture stage concentrates
+                &emsp; The Baseline Micro-Architecture stage concentrates
                 on classical micro-architectural innovation to build designs catering to specific applications and/or
                 verticals, some of which may be Safety, Security, High-performance, Embedded, Resource-Constrained, and
                 Multimedia. Guidance comes from learnings from various generator families, current
                 computing trends and customer requirements. We will get more into core and verification generators in the subsequent sections of the writeup.<br>
                 <br>
-                &emsp 
+                &emsp; 
                 You can ask, why we are using RISC-V? RISC-V is good choice because it is an open ISA, free, customizable and it has
                 a large developer community.<br>
                 Huh! too many technical terms to smash your head into at a time. Have you refered to the links in above para?:)
